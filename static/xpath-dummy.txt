@@ -1,0 +1,9 @@
+Obtain a unique, simplified and verified xpath for a set of elements on a web page.
+
+URL: https://helidon.io/nima
+
+Elements:
+- Button "Try It"
+- Button "See the code"
+
+Return the obtained values in bullet list format, replicating the element description plus the obtained xpath.
