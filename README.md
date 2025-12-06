@@ -6,5 +6,5 @@ Instale a ferramenta de gerenciamento dependências python.
 Execute a arquivo desejado para obter o prompt via clipboard.
 
 ```bash
-uv run src/kindle.py
+uv run src/example.py
 ```
