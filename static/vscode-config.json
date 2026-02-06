@@ -1,0 +1,12 @@
+{
+  "editor.rulers": [],
+  "python.terminal.activateEnvironment": false,
+  "files.associations": {
+    "*.poml": "xml"
+  },
+  "files.exclude": {
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/uv.lock": true
+  }
+}

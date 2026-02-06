@@ -1,0 +1,23 @@
+{
+  "file_scan_exclusions": [
+    "**/*.git",
+    "**/*.venv",
+    "**/__pycache__",
+    "**/*.python-version",
+    "**/.ruff_cache",
+    "**/*uv.lock"
+  ],
+  "file_types": {
+    "XML": ["poml"]
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["ty", "!basedpyright", "..."]
+    },
+    "XML": {
+      "format_on_save": "off",
+      "preferred_line_length": 999,
+      "show_completions_on_input": false
+    }
+  }
+}
