@@ -21,18 +21,20 @@ Este projeto demonstra como:
 Instale a ferramenta de gerenciamento de dependências Python:
 - [UV](https://github.com/astral-sh/uv)
 
-## Exemplo de uso
+## Como Executar
+
+O projeto possui um entrypoint único que lista todos os scripts disponíveis:
 
 ```bash
-uv run src/example.py
+uv run main.py
 ```
 
 ## Fluxo de Trabalho
 
-1. Defina variáveis de contexto no script Python
-2. Carregue o template POML com `utils.load()`
-3. POML processa e interpola as variáveis
-4. Prompt formatado é copiado para clipboard
+1. Execute `uv run main.py` e escolha o script desejado
+2. O script carrega o template POML correspondente
+3. POML processa e interpola as variáveis definidas
+4. Prompt formatado é copiado automaticamente para o clipboard
 5. Cole o prompt em seu LLM/agente preferido
 
 ## Recursos Adicionais

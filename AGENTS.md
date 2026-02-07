@@ -8,10 +8,19 @@ Este é um projeto educacional focado em **Prompt Engineering** usando **POML (P
 
 ### Estrutura de Diretórios
 
+- `main.py` - Entrypoint único para execução de scripts
 - `poml/` - Templates de prompts em formato .poml
 - `src/` - Scripts Python que processam os templates
 - `docs/` - Documentação (progress.md, glossary.md)
 - `static/` - Arquivos de configuração auxiliares
+
+## Como Executar
+
+O projeto possui um entrypoint único que lista todos os scripts disponíveis:
+
+```bash
+uv run main.py
+```
 
 ## O que é POML?
 
@@ -195,7 +204,8 @@ Quando um usuário pedir para criar um novo template POML:
    - Copiar para clipboard com `utils.copy()`
 
 4. **Testar o fluxo completo**
-   - Executar com `uv run src/nome_do_script.py`
+   - Executar com `uv run main.py` e escolher o script no menu
+   - OU executar diretamente com `uv run src/nome_do_script.py`
    - Verificar se o output no clipboard está correto
    - Testar com um LLM se possível
 
