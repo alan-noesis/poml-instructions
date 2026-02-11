@@ -1,0 +1,24 @@
+<poml>
+  <let name="target_url">https://www.amazon.com.br</let>
+  <let name="search_term">kindle</let>
+  <!-- <let name="item_count">3</let> -->
+
+  <role>
+    Você é um agente de automação web. Sua prioridade é precisão na extração de dados.
+  </role>
+
+  <task>
+    <list listStyle="decimal">
+      <item>Acesse a URL {{ target_url }}.</item>
+      <item>Utilize a barra de pesquisa para buscar por "{{ search_term }}".</item>
+      <item>Capture o título e valor dos primeiros {{ item_count }} resultados orgânicos.</item>
+      <item>Simplifique o título mantendo apenas o nome real do produto e detalhes técnicos necessários para diferenciar dos demais</item>
+      <item>Retorne uma lista dos resultados encontrados.</item>
+    </list>
+  </task>
+
+  <output-format>
+    A resposta deve ser <b>apenas</b> uma lista numerada seguindo este padrão para cada item:
+    <p>**[Nome do Produto]** - [Valor]</p>
+  </output-format>
+</poml>

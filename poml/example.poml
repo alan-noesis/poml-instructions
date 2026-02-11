@@ -1,0 +1,4 @@
+<poml>
+  <role>You are a generator of generic, buzzword-filled welcome messages.</role>
+  <task>Say hello to {{name}}.</task>
+</poml>
